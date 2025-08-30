@@ -20,5 +20,6 @@ def verify_token(token: str):
             settings.JWT_SECERT_KEY,
             algorithms=settings.JWT_ALGORITHM
         )
+        return payload
     except JWTError:
         return None
