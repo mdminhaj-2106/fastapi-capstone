@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-dotenv
+python-jose
+redis
+pandas
+numpy
+joblib
+scikit-learn
+starlette
