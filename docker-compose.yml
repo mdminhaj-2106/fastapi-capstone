@@ -1,0 +1,14 @@
+version: '28.1.1'
+
+services:
+        api:
+        build: .
+        container_name: fast-api
+        ports: 
+          - "8000: 8000"
+        environment:
+          - API_KEY = jjhergfkvnldskjgirsdjvfrfjk
+          - JWT_SECRET = my_secret
+          - REDIS_URL = redis://localhost:6379
+        depends_on:
+          - redis
